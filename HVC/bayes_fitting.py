@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+#
+
 import os
 import csv
 import numpy as np
@@ -10,11 +12,10 @@ import time
 import pandas as pd
 import linecache
 import scipy.stats
+
 def prob_cal(model_x,obs_x,err_x,model_y,obs_y,err_y,model_m,obs_feh,obs_erf,model_f):
-    chi=np.exp(-(((model_x-obs_x)**2/(err_x**2)) + ((model_y-obs_y)**2/(err_y**2))))
-    #print (chi)
-    I=(model_m**(-(2.35))) *chi * scipy.stats.norm(obs_feh, obs_erf).pdf(model_f)
-    #I=model_m *chi * scipy.stats.norm(obs_feh, obs_erf).pdf(model_f)
+    chi = np.exp(-(((model_x - obs_x) ** 2 / (err_x ** 2)) + ((model_y - obs_y) ** 2/(err_y  ** 2))))
+    I = (model_m**(-(2.35))) *chi * scipy.stats.norm(obs_feh, obs_erf).pdf(model_f)
     return (sp.integrate.trapz(I,model_m))
 
 def prob_cal_noimf(model_x,obs_x,err_x,model_y,obs_y,err_y,obs_feh,obs_erf,model_f):
