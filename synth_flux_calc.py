@@ -1,4 +1,9 @@
 #!/usr/bin/python
+""" 
+Calculate synthetic photmetry or fluxes for a given spectrum 
+Bands : GALEX, SDSS, 2MASS, PAN-STARRS(PS1), Johnson
+"""
+
 import os
 import numpy as np
 import scipy as sp
