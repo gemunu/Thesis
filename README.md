@@ -1,3 +1,3 @@
 # Thesis_
 
-Thesis relatud stuff
+Thesis related stuff
