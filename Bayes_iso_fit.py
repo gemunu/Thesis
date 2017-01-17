@@ -1,5 +1,12 @@
 #!/usr/bin/python
 
+"""
+Bayesian ischrone fitting for a star with a give Temperature and surface gravity.
+Ouputs pdfs and/or stellar parameter values with errors.
+Ref :
+
+"""
+
 import os
 import csv
 import numpy as np
