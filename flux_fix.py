@@ -1,10 +1,14 @@
+
+"""
+Fix the corrupt fluxes using the gradint of spectrum
+"""
+
 import math
 import numpy as np      
 import os
 from astropy.io import fits
 from numpy import interp
 from matplotlib import pyplot as plt
-
 
 def plot_(ax,x,y,f,c):
         ax.plot(x, y,c)
