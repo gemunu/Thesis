@@ -1,6 +1,8 @@
 
 """
-Fix the corrupt fluxes using the gradint of spectrum
+Fix the corrupt fluxes using the gradient of spectrum.
+(*fits)
+
 """
 
 import math
